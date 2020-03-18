@@ -1,0 +1,667 @@
+
+
+ul, li{
+	display: block;
+	
+	margin:0;
+}
+
+.container-my{
+	width: 100%;
+	max-width: 1100px;
+	margin:0 auto;
+}
+
+
+/*--------------МЕНЮ_БАР--------------*/
+.top-bar{
+	padding-top:20px;
+	background: #3f3f3f;
+	
+}
+
+.top-bar__item {
+	font-size:14px;
+
+	border-right: 2px solid #000;
+	transition: 0.2s;
+
+}
+
+.top-bar__item a{
+	color:#b8b8b8;
+	margin:0 17px;
+}
+
+.top-bar__item a:hover {
+	color:#ff9900;
+	text-decoration: none;
+}
+
+.top-bar__item p{
+	margin:0 17px;
+	font-size:12px;
+	color:#000000;
+}
+
+.icon{
+	font-size:30px;
+}
+
+.top-bar__item2 {
+	margin-top:-7px;
+	margin-right: 20px;
+	color:#1f1f1f;
+	transition: 0.1s;
+}	
+
+.top-bar__item2:last-child{
+	margin-right:0;
+
+}
+
+.top-bar__item2:hover{
+	color:#ee802f;
+	cursor:pointer;
+}
+
+.top-bar__icons{
+	margin-right: 50px;
+}
+
+/*--------------ШАПКА--------------*/
+
+.header{
+	background:#252525;
+	border-bottom: 15px solid #ff9900;
+}
+
+#header__hr{
+	height: 3px;
+	border:none;
+	background:#303030; 
+	width: 100%
+}
+
+.header__inner {	
+	margin-left:40px;
+	color:white;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+.header__inner p{
+	font-size: 10px;
+	color:#999999;
+	margin-left: 24px;
+	margin-top: 20px;
+}
+
+.header__input{
+	margin-right:50px;
+}
+
+.input__item{
+	width:215px;
+	height:32px;
+	background:#363636;
+	border:none;
+	font-size: 11px;
+	padding: 0 8px;
+	color:white;
+
+}
+
+
+.input__item::placeholder{
+	color:#7f7f7f;
+}
+
+.input__button{
+	width:65px;
+	height:32px;
+	color:#ffffff;
+	background: #ff9900;
+	border:none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.input__button:hover{
+	background: #ff7e00;
+	color:#888379;
+	font-size: 15px;
+}
+
+
+/*Слайдер*/
+
+.header__slider{
+	height:340px;
+	width:90%;
+	
+	margin-top: 25px;
+	position: relative;
+	margin:0 auto;
+	
+}
+
+.slides{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.slides-item{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#left__button, #right__button{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	opacity:0.3;
+	transition: 0.3s;
+}
+
+#left__button:hover, #right__button:hover{
+	opacity:1;
+}
+
+#left__button{
+	left:0;
+}
+
+#right__button{
+	right:0;
+}
+
+.dots__block{
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:10px;
+}
+
+.dots__item{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-right: 7px;
+	background: #000;
+	cursor:pointer;
+}
+
+.dots__item:last-child{
+	margin: 0;
+}
+
+.active{
+	background: #ff9900;
+}
+
+
+/*ДОБРО_ПОЖАЛОВАТЬ*/
+
+.welcome{
+	background: #f0f0f0;
+}
+
+.welcome__smallText{
+	margin-left: 30px;
+}
+
+.welcome__smallText p{
+	font-size: 12px;
+	margin-left: 8px;
+	margin-top: 20px;
+}
+
+.welcome__smallText p:first-child{
+	margin-left: 40px;
+}
+
+.welcome__smallText p:last-child{
+	color:#ff9900;
+	cursor: pointer;	
+}
+
+.welcome__rect {
+	height:100%;
+	width: 90%;
+	background: white;
+	margin: 0 auto;
+}
+
+.rect__container{
+	width:100%;
+	max-width: 900px;
+	margin:0 auto;
+}
+
+.welcome__title{
+	margin:0 auto;
+	text-align: center;
+	margin-top: 60px;
+	padding-bottom: 55px;
+	
+}
+
+
+.welcome__title::after{
+	display: block;
+	height:2px;
+	margin: 0 auto;
+	content:"";
+	width: 100%;
+	border-bottom: 1px solid #e1e1e1;
+	margin-top: 55px;
+
+
+}
+
+.welcome__title h2{
+	font-size:80px;
+	color:#dddddd;
+}
+
+.welcome__title p{
+	font-size:25px;
+	color:#989898;
+	
+}
+
+/*WHAT PEOPLE SAY ABOUT US*/
+
+.opinion__title{
+	color:#666666;
+}
+
+.opinion__title h2{
+	font-size: 20px;
+}
+
+.opinion__name{
+	color:#333333;
+	margin-top: 20px;
+	margin:0;
+
+}
+
+.opinion__name h2{
+	padding: 40px 0;
+	margin-left: 10px;
+}
+
+.opinion__name h2,p{
+	font-size: 16px;
+}
+
+.asterix{
+	color:#e1e1e1;
+	font-size: 80px;
+}
+
+.opinion__text p{
+	font-size:14px;
+	color:#999999;
+	margin: 0;
+	margin-top: -65px;
+}
+
+
+.welcome__intro::after{
+	display: block;
+	height:2px;
+	margin: 0 auto;
+	content:"";
+	width: 100%;
+	border-bottom: 1px solid #e1e1e1;
+	margin-top: 55px;
+}
+
+.opinion__cards2{
+	margin-top: 26px;
+}
+
+.opinion__cards2:last-child{
+	margin-top: 50px;
+}
+
+.opinion__text2 h2{
+	font-size: 16px;
+	margin-left:10px;
+	margin-top:15px;
+	color:#333333;
+}
+
+.opinion__text2 p{
+	font-size: 14px;
+	margin-left:10px;
+	color:#999999;
+}
+
+/*ПОСЛЕДНИЕ РАБОТЫ*/
+
+.welcome__latest{
+	margin-top:50px;
+}
+
+.latest__title h2{
+	font-size:14px;
+	color:#666666;
+}
+
+.latest__title p{
+	font-size:12px;
+	color:#999999;
+}
+
+.latest__inner p {
+	font-size:12px;
+	color:#999999;
+	margin-top: 25px;
+}
+
+.latest__inner {
+	margin-right:20px;
+}
+
+.latest__inner:first-child{
+	margin-left:-10px;
+}
+
+.latest__inner p:last-child{
+	margin-top:-10px;
+	color:#ff9900;
+}
+
+.latest__inner p:last-child:hover{
+	cursor:pointer;
+	color:#ff7500;
+	font-size:13px;
+}
+
+/*TWITTER ICON WITH TEXT*/
+
+.welcome__twitter{
+	margin-top: 46px;
+	margin-bottom: 24px;
+}
+
+.welcome__twitter p{
+	padding-top:32px;
+	font-size:17px;
+	color:#999999;
+}
+
+/*FOOTER*/
+
+.footer{
+	background: #252525;
+	
+}
+
+.footer__inner{
+	padding-bottom: 25px;
+}
+
+.footer__first{
+	margin-left: 40px;
+	padding-top:28px;
+}
+
+.footer__first h2{
+	font-size: 14px;
+	color:#656565;
+	text-transform: uppercase;
+}
+
+.footer__first p{
+	font-size: 12px;
+	margin: 0;
+	color:#858585;
+}
+
+.footer__second{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.footer__second p{
+	color:#fd9800;
+	border-bottom: 1px solid #333333;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+
+.footer__second p:hover{
+	cursor: pointer;
+	color:#ff7500;
+	font-size: 14px;
+}
+.footer_text{
+	margin-top: 32px;
+	color:#868686;
+}
+
+.footer__third{
+	margin-left: 0;
+}
+
+.footer__text3{
+	text-align: left;
+}
+
+.footer__text3 h2{
+	font-size: 12px;
+	color:#868686;
+}
+
+.footer__text3 p{
+	font-size: 10px;
+	color:#868686;
+}
+
+#posted_by{
+	margin-bottom: 5px;
+}
+
+#read_more{
+	margin-top:10px;
+	text-align: right;
+	color:#ff9900;
+	margin-right: 20px;
+}
+
+#read_more:hover{
+	font-size: 11px;
+	cursor: pointer;
+	color:#ff7500;
+}
+
+.footer__input4 input{
+	margin-bottom: 10px;
+	width:200px;
+	height: 31px;
+	background: #333333;
+	border:none;
+	border-radius: 5px;
+	padding:11px 10px;
+	font-size:14px;
+}
+
+
+.footer__input4 input::placeholder{
+	color:#868686;
+}
+
+.footer__input4 button{
+	width: 80px;
+	height: 31px;
+	color:#ff9900;
+	background: #333333;
+	border:none;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.footer__input4 button:hover{
+	color:#ff7500;
+	font-size: 17px;
+}
+
+.footer__fourth{
+	margin-left: 0;
+}
+
+/*Под шапкой ------- TEMPLATE*/
+
+.template{
+	background: black;
+	color:#737373;
+	padding-top: 25px;
+}
+
+.template p:first-child{
+	margin-left: 50px;
+	
+}
+
+.template p:last-child{
+	margin-right:  55px;
+	
+}
+
+.template__text:last-child{
+
+}
+
+/* Burger */
+
+.burger{
+	display: none;
+
+	background: none;
+	border:0;
+	cursor: pointer;
+	padding: 15px 0;
+}
+
+.burget__item{
+	display: block;
+	width: 30px;
+	height: 3px;
+
+	background: white;
+
+	font-size:0;
+	color:transparent;
+	position: relative;
+}
+
+.burget__item:before,
+.burget__item:after{
+	content:"";
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: absolute;
+	left:0;
+	z-index: 1;
+}
+
+.burget__item:before{
+	top:-9px;
+}
+
+.burget__item:before{
+	bottom:-9px;
+}
+
+/*МЕДИА*/
+
+@media (max-width: 940px) {
+	/*NAVIG*/
+	.nav__icons{
+		display: none;
+	}
+	
+
+	.burger{
+		display: block;
+	}
+
+	.opinion__title{
+		text-align: center;
+	}
+
+	.opinion__text {
+		text-align: center;
+	}
+
+	.opinion__name h2,p{
+		text-align: center;
+	}
+
+	.opinion__title2 {
+		margin-top: 50px;
+	}
+
+	.opinion__text2 p{
+		text-align: left;
+	}
+
+	.latest__title h2 {
+		text-align: center;
+	}
+
+	.latest__inner{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.latest__inner:first-child{
+		margin-left: 0; 
+	}
+
+	.twitter__p p{
+		font-size: 18px;
+	}
+
+	.welcome__twitter{
+		text-align: center;
+	}
+
+	.footer__first p{
+		text-align: left;
+	}
+
+	.footer_text{
+		margin-top: 20px;
+	}
+
+	.footer__input4 input{
+		width: 150px;
+	}
+
+	.footer__input4 button{
+		width:60px;
+		height: 28px;
+		font-size:14px;
+	}
+
+
+	.footer__input4 button:hover{
+		
+		font-size:14px;
+	}
+
+
+}
