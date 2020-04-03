@@ -8,7 +8,7 @@ li {
 }
 
 * {
-	padding: 0; /*убираем отступы у всех элементов*/
+	padding: 0;
 	margin: 0;
 }
 
@@ -21,8 +21,14 @@ header {
 	padding: 56px 0;
 }
 
+.container-main{
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
 .header-container {
-	width:69%;
+	width:100%;
 	margin:0 auto;
 	display:flex;
 	justify-content: space-between;
@@ -94,6 +100,8 @@ nav {
 	box-shadow: 0 -3px #eb7d4b inset;
 }
 
+
+/*Второй СЛАЙД*/
 .second-slide {
 	background: #17c2a4;
 	font-size: 30px;	
@@ -118,11 +126,6 @@ nav {
 	margin-top: -10px;	
 }
 
-.second_wrapper{
- 	width: 603px;
- 	margin: 0 auto;
- 	margin-top: -30px;
-}
 
 .second-container {
 	background: #17c2a4;
@@ -145,7 +148,7 @@ nav {
 	display:flex;
 	justify-content: space-between;
 	margin-top: 100px;
-	width:80%;
+	width:100%;
 }
 
 .first-p {
@@ -176,28 +179,24 @@ nav {
 	margin-right: 90px;
 }
 
+/*ТРЕТИЙ СЛАЙД*/
 
 .third-slide {
 	height: 922px;
 	background:#e7f1f8;
 	font-size:30px;
 	text-align: center;
+
 }
 
 .third-slide h3 {
 	color:#3c4761;
 }
 
-.third-container {
-	padding-top: 120px;
-	text-align: center;
-	margin-top: 111px;
-}
 
 .third-container h3{
 	padding-top: 120px;
 	margin-bottom: 54px;
-	color:#3c4761;
 }
 
 .third-slide h3:after{
@@ -215,10 +214,10 @@ nav {
 	color:#3c4761;
 }
 
-.specialize-cards2{
+.specialize-cards2 {
 	display:flex;
 	justify-content: space-between;
-	width:80%;
+	
 	margin:0 auto;
 	margin-top: 81px;
 
@@ -246,27 +245,29 @@ nav {
 	margin-top: 30px;
 }	
 
+/*ЧЕТВЁРТЫЙ СЛАЙД*/
+
 .fourth-slide {
 	text-align: center;
-	margin-top: 117px;
+	padding-top: 117px;
 	height: 655px;
-	margin-bottom: -140px;
-
+	
+	background: #313186;
 }
 
 .fourth-slide p{
-	color:#3c4761;
+	color:#E4D2A7;
 }
-
 
 .fourth-container p{
 	margin-top: 27px;
-	color:566076;
+	color:#E4D2A7;
+
 }
 
 .fourth-container h4{
 	font-size:30px;
-	color:#3c4761;
+	color:#E4D2A7;
 	font-weight: bold;	
 }
 
@@ -279,37 +280,160 @@ nav {
 	border-bottom: 4px solid #dfe8ed;
 }
 
-.diagrama {
-	background:#ffffff;
-	width:100px;
-	height: 100px;
+
+/*LOADDDDDDDD*/
+
+.container-fourth{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 400px;
+	background:#313186;
+}
+
+.container-load{
+	position: relative;
+	width: 900px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container-load .load-card{
+	position: relative;
+	width: 250px;
+	background: linear-gradient(0deg #1b1b1b, #222, #1b1b1b);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	border-radius: 4px;
 	text-align: center;
-	font: 40px/100px Times, serif;
-	border:24px solid #d74680;
-	border-right: 24px solid #dfe8ed;
-	border-radius:100px;
-	margin: 0 auto;
-	color:#3c4761;
+	overflow: hidden;
+	transition: 0.5s;
 }
 
-.diagrama span{
-	font-size:0.6em;
+.container-load .load-card:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
 }
 
-.diagrams {
-	display: inline-block;
-	justify-content: space-between;
-	text-align: center;
-	margin:0 auto;
-	margin-top: 80px;
-	margin-right: 120px;
+.container-load .load-card:before{
+	content:'';
+	position: absolute;
+	top:0;
+	left:-50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.03);
+	pointer-events: none;
+	z-index: 1;
 }
 
-.fourth-slide h2{
-	color:#3c4761;
-	font-size: 18px;
-	margin-top: 26px;
+.load-percent{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px #222;
+	background: #313186;
+	z-index: 1000;
 }
+
+
+.load-percent .load-number {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+
+.load-percent .load-number h2{
+	color:#E4D2A7;
+	font-weight: 700;
+	font-size: 40px;
+	transition: 0.5s;
+}
+
+.load-card:hover .load-percent .load-number h2{
+	color:#fff;
+	font-weight: 700;
+	font-size: 60px;
+	transition: 0.5s;
+}
+
+.load-percent .load-number h2 span{
+	color:#E4D2A7;
+	font-size: 24px;
+	transition: 0.5s;
+}
+
+.load-card:hover .load-percent .load-number h2 span{
+	color:#fff;
+}
+
+.load-text{
+	position: relative;
+	color:#E4D2A7;
+	font-weight: 700;
+	font-size:18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transform: 0.5s
+	padding-top:20px;
+}
+
+.load-card:hover .load-text {
+	color:white;
+}
+
+svg{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	z-index: 1000;
+}
+
+svg circle{
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: #151354;
+	stroke-width:10;
+	stroke-linecap:round;
+	transform: translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+	stroke-dasharray: 440;
+	stroke-dashoffset: 440;
+}
+
+.load-card:nth-child(1) svg circle:nth-child(2)
+{	
+	stroke-dashoffset:calc(440 - (440 * 90) / 100);
+	stroke: #00ff43;
+}
+
+.load-card:nth-child(2) svg circle:nth-child(2)
+{
+	stroke-dashoffset:calc(440 - (440 * 75) / 100);
+	stroke: #00a1ff;
+}
+
+.load-card:nth-child(3) svg circle:nth-child(2)
+{
+	stroke-dashoffset:calc(440 - (440 * 70) / 100);
+	stroke: #ff04f7;
+}
+
+
+/*СЛАЙД ПОРТФОЛИО*/
 
 .portfolio {
 	text-align: center;
@@ -421,7 +545,9 @@ nav {
 	align-items: center;
 	flex-wrap: wrap;
 	height: 300px;
-	margin-top: 70px;
+	padding-top: 70px;
+	width: 1100px;
+	margin:0 auto;
 }
 
 .about-us_items {
@@ -622,6 +748,8 @@ footer {
 }
 */
 /*-----INPUTS-----*/
+
+
 
 
 @media screen and (max-width:530px) {

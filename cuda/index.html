@@ -8,21 +8,23 @@
 </head>
 <body>
 	<header>	
-		<div class="header-container">
-			<div class="logo">
-				<img src = 'image/LOGO.png' >
+		<div class="container-main">
+			<div class="header-container ">
+				<div class="logo">
+					<img src = 'image/LOGO.png' >
+				</div>
+				<input type = 'checkbox' id = 'menu-checkbox'>
+				<nav role = 'navigation'>
+					<label for = 'menu-checkbox' class = 'toggle-button' data-open = 'MENU'
+					data-close = 'CLOSE' onclick></label>	
+					<ul class = 'main-menu'>
+					<li><a href = '#'>HOME</a></li>
+					<li><a href = '#'>ABOUT</a></li>
+					<li><a href = '#'>WORK</a></li>
+					<li><a href = '#'>BLOG</a></li>
+					<li><a href = '#'>CONTACT</a></li>
+					</ul>
 			</div>
-			<input type = 'checkbox' id = 'menu-checkbox'>
-			<nav role = 'navigation'>
-				<label for = 'menu-checkbox' class = 'toggle-button' data-open = 'MENU'
-				data-close = 'CLOSE' onclick></label>	
-				<ul class = 'main-menu'>
-				<li><a href = '#'>HOME</a></li>
-				<li><a href = '#'>ABOUT</a></li>
-				<li><a href = '#'>WORK</a></li>
-				<li><a href = '#'>BLOG</a></li>
-				<li><a href = '#'>CONTACT</a></li>
-				</ul>
 		</div>
 
 		<div class = 'top-container'>
@@ -33,8 +35,10 @@
 
 	</header>
 	<main>
+
+<!--!--------------ВТОРОЙ СЛАЙД!---------------->
 		<section class = 'second-slide'>
-			<div class = 'second-container'>
+			<div class = 'container-main second-container'>
 				<div id = 'title_second'><h2>SERVICES WE PROVIDE</h2></div>
 				<div>
 					<p class = 'second-slide_p'>We are working with both individuals and businesses from all over the globe
@@ -79,8 +83,11 @@
 				</div>
 		</section>
 
+
+
+<!--!--------------ТРЕТИЙ СЛАЙД!---------------->
 		<section class= 'third-slide'>
-			<div class = 'third-container'></div>
+			<div class = 'container-main third-container'>
 				<div><h3>MEET OUR BEAUTIFUL TEAM</h3></div>
 				<div><p id = 'p_third'>We are small team of designers and developers, who help brands with big ideas</p></div>
 				<div class = 'specialize-cards2'>
@@ -163,30 +170,69 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
+
+
+<!--!--------------ЧЕТВЕРТЫЙ СЛАЙД!---------------->
 		<section class = 'fourth-slide'>
 			<div class = 'fourth-container'>
 				<div><h4>WE GOT SKILLS!</h4></div>
 				<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p></div>
-				<div class= 'diagrams'>
-					<div class = 'diagrama'>90<span>%</span></div>
-					<div><h2>WEB DESIGN</h2></div>
+				<div class="container-fourth">					
+					<div class="container-load">
+						<div class="load-card">
+							<div class="load-box">
+								<div class="load-percent">
+									<svg>
+										<circle cx = "70" cy = "70" r = "70"></circle>
+										<circle cx = "70" cy = "70" r = "70"></circle>
+									</svg>
+										<div class="load-number">
+											<h2>90<span>%</span></h2>
+										</div>
+								</div>
+							<h2 class = 'load-text'>Web Design</h2>
+							</div>
+						</div>
+						<div class="load-card">
+							<div class="load-box">
+								<div class="load-percent">
+									<svg>
+										<circle cx = "70" cy = "70" r = "70"></circle>
+										<circle cx = "70" cy = "70" r = "70"></circle>
+									</svg>
+										<div class="load-number">
+											<h2>75<span>%</span></h2>
+										</div>
+								</div>
+							<h2 class = 'load-text'>Html/Css</h2>
+							</div>
+						</div>
+
+						<div class="load-card">
+							<div class="load-box">
+								<div class="load-percent">
+									<svg>
+										<circle cx = "70" cy = "70" r = "70"></circle>
+										<circle cx = "70" cy = "70" r = "70"></circle>
+									</svg>
+										<div class="load-number">
+											<h2>70<span>%</span></h2>
+										</div>
+								</div>
+							<h2 class = 'load-text'>Graphic Design</h2>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class= 'diagrams'>
-					<div class = 'diagrama'>75<span>%</span></div>
-					<div><h2>HTML / CSS</h2></div>
-				</div>
-				<div class= 'diagrams'>
-					<div class = 'diagrama'>70<span>%</span></div>
-					<div><h2>GRAPHIC DESIGN</h2></div>
-			</div>
-				<div class= 'diagrams'>
-					<div class = 'diagrama'>85<span>%</span></div>
-					<div><h2>UI / UX</h2></div>
-				</div>
+
 			</div>
 		</section>
+
+
+<!--!--------------ПЯТЫЙ(ПОРТФОЛИО) СЛАЙД!---------------->
 		<section class = 'portfolio'>
 				<div><h4>OUR PORTFOLIO</h4></div>
 				<div><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p></div>
@@ -206,6 +252,8 @@
 						<button>LOAD MORE PROJECTS</button>
 					</div>
 		</section>
+
+<!--!--------------_ШЕСТОЙ(О НАС) СЛАЙД!---------------->
 		<section class = 'about-us'>
 			<h2>WHAT POEPLE SAY ABOUT US</h2>
 			<p>Our clients love us!</p>
@@ -250,6 +298,8 @@
 			
 		</section>
 
+
+<!--!--------------ПОСЛЕДНИЙ СЛАЙД!---------------->
 		<section class = 'last-slide'>
 			<div class = 'content-last'>
 				<div><h2>GET IN TOUCH</h2></div>
@@ -272,6 +322,8 @@
 			</div>
 		</section>
 	</main>
+
+<!--!--------------FOOTTER SLIDE - SOCIAL---------------->
 	<footer>
 		<div class="social">
 			<a href = '#'><p>Facebook</p></a>
